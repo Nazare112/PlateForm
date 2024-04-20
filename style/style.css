@@ -243,4 +243,73 @@ button:active, button:focus {
 
 .advertising_icon_left {
   margin-left: -55px;
+}
+
+.management {
+  background-image: url(../image/management/background.svg);
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.management_container {
+  height: 800px;
+}
+
+.management_section_text {
+  margin-top: 180px;
+}
+
+.management_alt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2C65C8;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #F1F6FF;
+  border: 1px solid #F1F6FF;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+}
+
+.management_title {
+  color: #121D2F;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 24px 0 0 0;
+}
+
+.management_text {
+  color: #121D2F;
+  margin: 48px 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.management_section_quality {
+  margin-top: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.management_quality_item {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  width: 240px;
+}
+
+.management_quality_icon {
+  margin-right: 15px;
+  height: 72px;
+  width: 64px;
+}
+
+.management_quality_text {
+  font-size: 14px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */

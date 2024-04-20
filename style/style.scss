@@ -1,0 +1,225 @@
+
+body {
+	height: 100%;
+	line-height: 1;
+	font-size: 18px;
+	color: #121D2F;
+	font-weight: 500;
+	font-family: Plus Jakarta Sans ;
+}
+//----------------------------------------------------------------
+ul {
+    padding-inline-start: 0px;
+}
+button:active, button:focus {
+	outline: none !important;
+	}
+//----------------------------------------------------------------
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+//----------------------------------------------------------------
+._container {
+	max-width: 1200px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	box-sizing: content-box;
+}
+//----------------------------------------------------------------
+.header {
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+.header_container {
+	align-items: center;
+	display: flex;
+	min-height: 72px;
+	justify-content: space-between;
+}
+.header_logo {
+	display: flex;
+}
+.header_menu {
+    display: flex;
+    align-items: center;
+}
+.menu_list {
+	flex-wrap: wrap;
+	display: flex;
+    justify-content: center;; 
+}
+.menu_list li {
+		list-style-type: none;
+}
+.menu_item:not(:last-child) {
+    margin: 0 20px 0 20px;
+}
+.menu_link {
+	text-decoration: none;
+	color: #121D2F;
+	font-weight: 600;
+	font-size: 14px;
+    margin: 0 20px;
+}
+//----------------------------------------------------------------
+.main {
+	background-image: url(../image/main/background.svg);
+            background-size: no-repeat;
+            background-position: center;
+            background-size: cover;
+
+}
+.main_container {
+	
+}
+.main_items {
+	display: flex;
+	padding-top: 140px;
+}
+.main_title {
+	z-index: 2 ;
+	line-height: 1.3;
+	font-size: 44px;
+	font-weight: 700;
+}
+.main_text {
+	z-index: 2 ;
+	margin-top: 48px;
+	line-height: 1.2;
+    font-size: 18px;
+    font-weight: regular;
+	color: #364050;
+}
+.main_design_item {
+	background-image: url(../image/main/design.png);
+    background-size: no-repeat;
+	align-items: flex-start;
+	justify-content: flex-end;
+	width: 770px;
+	height: 700px;
+	z-index: 1;
+}
+.main_buttons {
+	display: flex;
+	height: 48px;
+	align-items: center;
+}
+.main_button {
+	cursor: pointer;
+	display: flex;
+  	align-items: center; 
+  	justify-content: center; 
+	align-items: center;
+	background-color: #F1F6FF;
+	color: #2C65C8 ;
+	width: 180px;
+	height: 48px;
+	border: 1px solid #F1F6FF;
+  	border-radius: 10px;
+	margin-right: 16px;
+}
+.main_button_icon {
+	margin-right: 5px;
+}
+.main_button_blue {
+	cursor: pointer;
+	background-color: #2C65C8;
+	color: #fff ;
+	width: 180px;
+	height: 48px;
+	border: 1px solid #2C65C8;
+  	border-radius: 10px;
+}
+//----------------------------------------------------------------
+.restaurant_container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+.restaurant_section_text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-top: 77px;
+	height: 324px;
+	width: 634px;
+	
+}
+.restaurant_alt {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #2C65C8;
+	font-size: 12px;
+	font-weight: 700;
+	background-color: #F1F6FF;
+	border: 1px solid #F1F6FF;
+  	border-radius: 10px;
+	width: 200px;
+	height: 40px;
+}
+.restaurant_title {
+	color: #121D2F;
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0 0 0 0;
+}
+.restaurant_text {
+	color: #121D2F;
+	margin: 48px 0;
+	text-align: center;
+	font-size: 18px;
+	font-weight:400;
+	line-height: 1.5;
+}
+.restaurant_section_quality {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 634px;
+}
+.restaurant_quality_item {
+	display: flex;
+    align-items: center;
+	height: 72px;
+	width: 177px;
+}
+.restaurant_quality_icon {
+	margin-right: 15px;
+	height: 72px;
+	width: 64px;
+}
+.restaurant_quality_text {
+	font-size: 14px;
+	font-weight: 600;
+}
+//----------------------------------------------------------------
+.advertising_container {
+	overflow: hidden;
+}
+.advertising_text {
+	padding-top: 160px;
+	padding-bottom: 32px;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	letter-spacing: 3px;
+	color: #8D96A6;
+}
+.advertising_item {
+	display: flex;
+	justify-content: space-between;
+}
+.advertising_icon_right {
+	margin-right: -55px;
+}
+.advertising_icon_left {
+	margin-left: -55px;
+}

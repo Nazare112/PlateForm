@@ -268,12 +268,13 @@ button:active, button:focus {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 700px;
 }
 .management_quality_item {
 	display: flex;
     align-items: center;
 	height: 72px;
-	width: 240px;
+	width: 220px;
 }
 .management_quality_icon {
 	margin-right: 15px;
@@ -283,4 +284,74 @@ button:active, button:focus {
 .management_quality_text {
 	font-size: 14px;
 	font-weight: 600;
+}
+
+//----------------------------------------------------------------
+.communication {
+	background-image: url(../image/communication/background.svg);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.communication_container {
+	height: 800px;
+}
+.communication_block-text {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.communication_alt {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #2C65C8;
+	font-size: 12px;
+	font-weight: 700;
+	background-color: #F1F6FF;
+	border: 1px solid #F1F6FF;
+  	border-radius: 10px;
+	width: 200px;
+	height: 40px;
+}
+.communication_title {
+	color: #121D2F;
+	font-size: 40px;
+	font-weight: 700;
+	margin: 24px 0 0 0;
+}
+.communication_text {
+	color: #121D2F;
+	margin: 48px 0;
+	font-size: 18px;
+	font-weight:400;
+	line-height: 1.5;
+}
+.communication_block-items {
+	z-index: 10;
+	margin-top: 230px;
+	display: flex;
+	justify-content: space-around;
+}
+.communication_item {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.communication_item_text {
+	font-size: 14px;
+    font-weight: 700;
+}
+.communication_line {
+	width: 100%;
+    border-bottom: 3px solid #0EB03B;
+	margin-top: -80px;	
+}
+.none {
+	//не придумал нечего лучше, по другому собака режет иконки
+	color: #fff;
+	margin-top: 30px;
 }

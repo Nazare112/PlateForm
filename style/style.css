@@ -66,6 +66,10 @@ button:active, button:focus {
   list-style-type: none;
 }
 
+.menu_item {
+  width: 160px;
+}
+
 .menu_item:not(:last-child) {
   margin: 0 20px 0 20px;
 }
@@ -78,13 +82,28 @@ button:active, button:focus {
   margin: 0 20px;
 }
 
+@media (max-width: 1024px) {
+  .menu_link {
+    font-size: 16px;
+  }
+}
 .main {
-  background-image: url(../image/main/background.svg);
+  background-image: url(../image/main/backgroud.svg);
   background-size: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 800px;
 }
 
+@media (max-width: 750px) {
+  .main {
+    background-image: none;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+  }
+}
 .main_items {
   display: flex;
   padding-top: 140px;
@@ -93,7 +112,7 @@ button:active, button:focus {
 .main_title {
   z-index: 2;
   line-height: 1.3;
-  font-size: 44px;
+  font-size: calc(24px + 1.3333333333vw);
   font-weight: 700;
 }
 
@@ -101,19 +120,9 @@ button:active, button:focus {
   z-index: 2;
   margin-top: 48px;
   line-height: 1.2;
-  font-size: 18px;
+  font-size: calc(11px + 0.5833333333vw);
   font-weight: regular;
   color: #364050;
-}
-
-.main_design_item {
-  background-image: url(../image/main/design.png);
-  background-size: no-repeat;
-  align-items: flex-start;
-  justify-content: flex-end;
-  width: 770px;
-  height: 700px;
-  z-index: 1;
 }
 
 .main_buttons {
@@ -122,6 +131,14 @@ button:active, button:focus {
   align-items: center;
 }
 
+@media (max-width: 410px) {
+  .main_buttons {
+    display: block;
+  }
+  .main_buttons .main_button {
+    margin-bottom: 10px;
+  }
+}
 .main_button {
   cursor: pointer;
   display: flex;
@@ -167,6 +184,11 @@ button:active, button:focus {
   width: 634px;
 }
 
+@media (max-width: 750px) {
+  .restaurant_section_text {
+    padding-top: 30px;
+  }
+}
 .restaurant_alt {
   display: flex;
   align-items: center;
@@ -183,7 +205,7 @@ button:active, button:focus {
 
 .restaurant_title {
   color: #121D2F;
-  font-size: 40px;
+  font-size: calc(22px + 1.3333333333vw);
   font-weight: 700;
   margin: 0 0 0 0;
 }
@@ -192,7 +214,7 @@ button:active, button:focus {
   color: #121D2F;
   margin: 48px 0;
   text-align: center;
-  font-size: 18px;
+  font-size: calc(8px + 0.5833333333vw);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -209,6 +231,7 @@ button:active, button:focus {
   align-items: center;
   height: 72px;
   width: 177px;
+  margin: 0 10px;
 }
 
 .restaurant_quality_icon {
@@ -256,10 +279,28 @@ button:active, button:focus {
   background-size: cover;
 }
 
+@media (max-width: 940px) {
+  .management {
+    background-image: none;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
 .management_container {
   height: 800px;
 }
 
+@media (max-width: 530px) {
+  .management_container {
+    height: 900px;
+  }
+}
+@media (max-width: 480px) {
+  .management_container {
+    height: 1000px;
+  }
+}
 .management_section_text {
   margin-top: 180px;
 }
@@ -280,7 +321,7 @@ button:active, button:focus {
 
 .management_title {
   color: #121D2F;
-  font-size: 40px;
+  font-size: calc(22px + 1.3333333333vw);
   font-weight: 700;
   margin: 24px 0 0 0;
 }
@@ -288,19 +329,33 @@ button:active, button:focus {
 .management_text {
   color: #121D2F;
   margin: 48px 0;
-  font-size: 18px;
+  font-size: calc(14px + 0.3333333333vw);
   font-weight: 400;
   line-height: 1.5;
 }
 
+@media (max-width: 940px) {
+  .management_text {
+    font-weight: 500;
+  }
+}
 .management_section_quality {
   margin-top: 160px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 1200px;
+  flex-wrap: wrap;
 }
 
+@media (min-width: 1210px) {
+  .management_section_quality {
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+  }
+}
 .management_quality_item {
   display: flex;
   align-items: center;
@@ -326,6 +381,14 @@ button:active, button:focus {
   background-size: cover;
 }
 
+@media (max-width: 940px) {
+  .communication {
+    background-image: none;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
 .communication_container {
   height: 800px;
 }
@@ -351,7 +414,7 @@ button:active, button:focus {
 
 .communication_title {
   color: #121D2F;
-  font-size: 40px;
+  font-size: calc(22px + 1.3333333333vw);
   font-weight: 700;
   margin: 24px 0 0 0;
 }
@@ -359,7 +422,7 @@ button:active, button:focus {
 .communication_text {
   color: #121D2F;
   margin: 48px 0;
-  font-size: 18px;
+  font-size: calc(11px + 0.5833333333vw);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -369,8 +432,14 @@ button:active, button:focus {
   margin-top: 230px;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
+@media (max-width: 350px) {
+  .communication_block-items {
+    margin-top: 120px;
+  }
+}
 .communication_item {
   justify-content: center;
   align-items: center;
@@ -390,6 +459,13 @@ button:active, button:focus {
   margin-top: -80px;
 }
 
+@media (max-width: 1150px) {
+  .communication_line {
+    width: none;
+    border-bottom: none;
+    margin-top: none;
+  }
+}
 .none {
   color: #fff;
   margin-top: 30px;
@@ -402,6 +478,14 @@ button:active, button:focus {
   background-size: cover;
 }
 
+@media (max-width: 765px) {
+  .analytic {
+    background-image: none;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
 .analytic_container {
   height: 800px;
 }
@@ -422,7 +506,7 @@ button:active, button:focus {
 
 .analytic_title {
   color: #121D2F;
-  font-size: 40px;
+  font-size: calc(22px + 1.3333333333vw);
   font-weight: 700;
   margin: 24px 0 48px 0;
 }
@@ -438,6 +522,7 @@ button:active, button:focus {
 
 .analytic_block-text {
   font-weight: 400;
+  font-size: calc(11px + 0.5833333333vw);
   line-height: 1.5;
 }
 
@@ -455,8 +540,14 @@ button:active, button:focus {
 .price_blocks {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+@media (max-width: 1090px) {
+  .price_blocks {
+    justify-content: space-around;
+  }
+}
 .price_items {
   display: flex;
   align-items: center;
@@ -472,18 +563,23 @@ button:active, button:focus {
 }
 
 .price_header_title {
-  font-size: 40px;
+  font-size: calc(22px + 1.3333333333vw);
   font-weight: 700;
   text-align: center;
 }
 
 .price_header_text {
-  font-size: 18px;
+  font-size: calc(11px + 0.5833333333vw);
   font-weight: 400;
   letter-spacing: 0.5px;
   text-align: center;
 }
 
+@media (max-width: 330px) {
+  .price_item_text {
+    margin-left: 5px;
+  }
+}
 .price_items_blue {
   display: flex;
   align-items: center;
@@ -617,7 +713,7 @@ button:active, button:focus {
 }
 
 .testimonials_header_text {
-  font-size: 18px;
+  font-size: calc(11px + 0.5833333333vw);
   font-weight: 400;
   letter-spacing: 0.5px;
   text-align: center;
@@ -625,7 +721,7 @@ button:active, button:focus {
 }
 
 .testimonials_header_title {
-  font-size: 40px;
+  font-size: calc(22px + 1.3333333333vw);
   font-weight: 700;
   text-align: center;
 }
@@ -688,6 +784,33 @@ button:active, button:focus {
   line-height: 1.6;
 }
 
+@media (max-width: 1100px) {
+  .testimonial_blocks {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testimonial_blocks .testimonials_block_2 {
+    margin-bottom: 60px;
+    margin-top: 0px;
+  }
+  .testimonial_blocks ._start {
+    margin-left: 0px;
+  }
+  .testimonial_blocks ._end {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1100px) {
+  ._start {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1100px) {
+  ._end {
+    margin-right: 0px;
+  }
+}
 .testimonial_logo {
   width: 220px;
   max-width: 100%;
@@ -763,14 +886,14 @@ button:active, button:focus {
   align-items: center;
   text-align: center;
   display: flex;
-  font-size: 40px;
+  font-size: calc(22px + 1.3333333333vw);
   font-weight: 700;
   height: 30px;
 }
 
 .stories_header_text {
   text-align: center;
-  font-size: 18px;
+  font-size: calc(9px + 0.4166666667vw);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -797,10 +920,34 @@ button:active, button:focus {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1090px) {
+  .stories_items {
+    display: block;
+    height: 1080px;
+  }
+}
+@media (max-width: 550px) {
+  .stories_items {
+    display: block;
+    height: 820px;
+  }
+}
 .stories_img {
   border-radius: 30px;
 }
 
+@media (max-width: 550px) {
+  .stories_img {
+    width: 342px;
+    height: 333px;
+  }
+}
+@media (max-width: 550px) {
+  .stories_image {
+    display: flex;
+    justify-content: center;
+  }
+}
 .stories_text {
   width: 477px;
   height: 533px;
@@ -810,7 +957,7 @@ button:active, button:focus {
   margin: 57px 0 64px 0;
 }
 .stories_text p {
-  font-size: 18px;
+  font-size: calc(11px + 0.5833333333vw);
   font-weight: 400;
   line-height: 1.5;
 }
@@ -819,6 +966,20 @@ button:active, button:focus {
   margin-top: 131px;
 }
 
+@media (max-width: 550px) {
+  .stories_text {
+    width: 320px;
+    height: 533px;
+    margin-left: 20px;
+  }
+  .stories_text .stories_buttons {
+    display: block;
+    margin-top: 30px;
+  }
+  .stories_text .stories_buttons .stories_button {
+    margin-bottom: 10px;
+  }
+}
 .stories_button {
   cursor: pointer;
   display: flex;
@@ -860,13 +1021,13 @@ button:active, button:focus {
 }
 
 .intergrations_header_title {
-  font-size: 40px;
+  font-size: calc(22px + 1.3333333333vw);
   font-weight: 700;
   text-align: center;
 }
 
 .intergrations_header_text {
-  font-size: 18px;
+  font-size: calc(11px + 0.5833333333vw);
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: center;
@@ -875,11 +1036,20 @@ button:active, button:focus {
 
 .intergrations_buttons {
   display: flex;
-  justify-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  margin: 131px 0 90px 0;
+  margin: 131px 0;
 }
 
+@media (max-width: 465px) {
+  .intergrations_buttons {
+    margin-top: 50px;
+  }
+  .intergrations_buttons .intergrations_button {
+    margin-bottom: 10px;
+  }
+}
 .intergrations_button {
   cursor: pointer;
   display: flex;
@@ -917,14 +1087,22 @@ button:active, button:focus {
   height: 277px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
+@media (max-width: 795px) {
+  .footer_container {
+    justify-content: center;
+    height: auto;
+  }
+}
 .footer_column {
   padding: 50px 15px;
   display: flex;
   text-align: left;
   flex-direction: column;
+  width: 165px;
 }
 
 .footer_label {

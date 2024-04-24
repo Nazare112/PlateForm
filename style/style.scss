@@ -418,6 +418,7 @@ button:active, button:focus {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	z-index: 5;
 }
 .communication_item_text {
 	font-size: 14px;
@@ -425,8 +426,9 @@ button:active, button:focus {
 }
 .communication_line {
 	width: 100%;
-    border-bottom: 3px solid #0EB03B;
-	margin-top: -80px;	
+    border-bottom: 3px solid #0EB03B;	
+	margin-bottom: -80px;
+	z-index: 1;
 }
 @media (max-width: 1150px) {
 	.communication_line {
